@@ -252,5 +252,18 @@ body{
   td{
     padding-left: 20px;
   }
+  @keyframes fadeIn {
+    from {color:black}
+    to {color: white;}
+    
+  }
+  #whats-up{
+    font-size: 30px;
+    text-align: center;
+
+    color: white;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+  }
 
   
