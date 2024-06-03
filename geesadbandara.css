@@ -35,9 +35,14 @@ body{
     font-weight: bold;
     color: white
 }
+.nav-item-a{
+  color: white;
+}
+.nav-items:hover .nav-item-a{
+  color: black;
+}
 .nav-items:hover{
     background-color: white;
-    color: black;
 }
 #who-am-i{
     background-color:black; 
@@ -74,6 +79,7 @@ body{
 #hello{
     font-size: 30px;
     margin-bottom: 0px;
+    overflow:hidden ;
 }
 #i-am{
     font-size: 30px;
@@ -236,5 +242,15 @@ body{
     }
   }
   a{
-   text-decoration: none; 
+   text-decoration: none;
+ 
   }
+  .foot{
+    display: flex;
+    justify-content: center;
+  }
+  td{
+    padding-left: 20px;
+  }
+
+  
