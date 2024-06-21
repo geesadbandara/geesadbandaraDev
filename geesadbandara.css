@@ -76,6 +76,15 @@ body{
     position: relative;
     right: -50px
 }
+@media screen and (max-width: 720px) {
+  
+  #who-am-i-pic-png{
+    width:200px;
+    height: 200px;
+    position: relative;
+    right: 0px
+}
+}
 #hello{
     font-size: 30px;
     margin-bottom: 0px;
