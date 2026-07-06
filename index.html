@@ -1,151 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="geesadbandara.css">
-    <title>Geesad Bandara</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <title>Geesad Bandara</title>
+  <meta name="description" content="Portfolio of Geesad Bandara — Software Engineering undergraduate and full-stack Java developer.">
+  <meta property="og:title" content="Geesad Bandara">
+  <meta property="og:description" content="Portfolio of Geesad Bandara — Software Engineering undergraduate and full-stack Java developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/pp.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0f'/><text x='50' y='68' font-size='48' font-family='sans-serif' font-weight='700' fill='%2302dce4' text-anchor='middle'>GB</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
 </head>
 <body>
-    
-    <div class="top">
-        <nav id="navigation-bar">
-            <div class="nav-items"><a class="nav-item-a" href="#who-am-i">Who am I ?</a></div>
-            <div class="nav-items"><a class="nav-item-a" href="#what-am-i-doing">What am I doing ?</a></div>
-            <div class="nav-items"><a class="nav-item-a" href="#whats-up">Whats up?</a></div>
-            <div class="nav-items"><a class="nav-item-a" href="#social-media-logo">Where can you find me?</a></div>  
-        </nav>
-        <div id="who-am-i">
-            <div id="who-am-i-desc">
-                <p id="hello">Hello !</p>
-                <h2 id="i-am">I am</h2>
-                <h1 id="name">Geesad Bandara</h1>
-            </div>
-            <div id="who-am-i-pic">
-                <img id="who-am-i-pic-png" src="img/IMG_4839.PNG">
-            </div>
-        </div>
-    </div>
-    <div class="mid">
-        <div id="what-am-i-doing">
-            <div class="ag-format-container">
-                <div class="ag-courses_box">
-                  <div class="ag-courses_item">
-                    <a href="https://www.westminster.ac.uk/" class="ag-courses-item_link">
-                      <div class="ag-courses-item_bg"></div>
-              
-                      <div class="ag-courses-item_title">
-                        BEng(Hons) Software Engineering Undergraduate at UOW
-                      </div>
-              
-                      <div class="ag-courses-item_date-box">
-                       
-                        <span class="ag-courses-item_date">
-                        
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-              
-                  <div class="ag-courses_item">
-                    <a href="https://www.geeksforgeeks.org/java-full-stack/" class="ag-courses-item_link">
-                      <div class="ag-courses-item_bg"></div>
-              
-                      <div class="ag-courses-item_title">
-                        Full-Stack <br>
-                        Java Developer
-                      </div>
-              
-                      <div class="ag-courses-item_date-box">
-                        
-                        <span class="ag-courses-item_date">
-                         
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-              
-                  <div class="ag-courses_item">
-                    <a href="https://azure.microsoft.com/en-us" class="ag-courses-item_link">
-                      <div class="ag-courses-item_bg"></div>
-              
-                      <div class="ag-courses-item_title">
-                       Learning Cloud Technologies : Azure 
-                      </div>
-              
-                      <div class="ag-courses-item_date-box">
-                        
-                        <span class="ag-courses-item_date">
-                          
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-              
-                  <div class="ag-courses_item">
-                    <a href="https://www.postman.com/student-program/student-leader/" class="ag-courses-item_link">
-                      <div class="ag-courses-item_bg"></div>
-              
-                      <div class="ag-courses-item_title">
-                        Postman Student Leader of Informatics Institute of Technology
-                      </div>
-              
-                      <div class="ag-courses-item_date-box">
-                        Since:
-                        <span class="ag-courses-item_date">
-                          01.01.2024
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-              
-                  <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
-                      <div class="ag-courses-item_bg"></div>
-              
-                      <div class="ag-courses-item_title">
-                        IEEE-ian
-                      </div>
-              
-                      <div class="ag-courses-item_date-box">
-                        Since:
-                        <span class="ag-courses-item_date">
-                          2023
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-              
-              
-                </div>
-              </div>
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora-blob"></span>
+    <span class="aurora-blob"></span>
+    <span class="aurora-blob"></span>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav id="top-nav" aria-label="Primary">
+    <a href="#hero" class="nav-brand">GB</a>
+    <div class="nav-right">
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1 class="hero-name" id="hero-name">Geesad Bandara<span class="name-glass-lens" aria-hidden="true"></span></h1>
+        <p class="hero-role">Software Engineering Undergraduate &amp; Full-Stack Java Developer</p>
+        <p class="hero-tagline">What's up? Rainy clouds ☔</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
         </div>
       </div>
-      <div id="whats-up">
-        Whats up ? Rainy Clouds 
+      <div class="hero-photo">
+        <div class="hero-photo-wrap tilt-card" id="hero-photo-wrap">
+          <img src="img/pp.png" alt="Portrait of Geesad Bandara" width="565" height="700" loading="eager" fetchpriority="high">
+        </div>
+        <span class="hero-chip hero-chip-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path></svg>
+          Java
+        </span>
+        <span class="hero-chip hero-chip-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"></path></svg>
+          Azure
+        </span>
       </div>
+    </section>
 
-        
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">SOFTWARE ENGINEERING</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">JAVA &amp; SPRING BOOT</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">AZURE &amp; CLOUD</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">JAVASCRIPT, HTML &amp; CSS</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">GIT &amp; GITHUB</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">SOFTWARE ENGINEERING</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">JAVA &amp; SPRING BOOT</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">AZURE &amp; CLOUD</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">JAVASCRIPT, HTML &amp; CSS</span><span class="marquee-item marquee-dot">&bull;</span>
+        <span class="marquee-item">GIT &amp; GITHUB</span><span class="marquee-item marquee-dot">&bull;</span>
+      </div>
     </div>
-    <div class="foot" style="background-color: white;">
-      <table id="social-media-logo">
-        <tr>
-          <td>
-            <a href="https://github.com/geesadbandara">
-              <img src="img/Github_logo_PNG1.png" width="50px" height="50px">
+
+    <section id="about">
+      <div class="container reveal">
+        <h2 class="section-heading">About Me</h2>
+        <p class="about-text">I'm a BEng(Hons) Software Engineering undergraduate with a focus on full-stack Java development. Alongside my studies, I'm building cloud skills on Microsoft Azure and staying active in the developer community as a Postman Student Leader and IEEE member.</p>
+        <p class="about-text">I enjoy learning new technologies and turning what I learn into practical, working software.</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <p class="stat-number" data-count-to="4">0</p>
+            <p class="stat-label">Core Skills</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count-to="2023">0</p>
+            <p class="stat-label">IEEE Member Since</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count-to="2024">0</p>
+            <p class="stat-label">Postman Leader Since</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-heading reveal">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card tilt-card accent-gold reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            <h3>Java &amp; Spring Boot</h3>
+            <p>Backend</p>
+          </div>
+          <div class="skill-card tilt-card accent-green reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"></path></svg>
+            <h3>Azure &amp; Cloud</h3>
+            <p>Cloud Computing</p>
+          </div>
+          <div class="skill-card tilt-card accent-cyan reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <h3>JavaScript, HTML &amp; CSS</h3>
+            <p>Frontend</p>
+          </div>
+          <div class="skill-card tilt-card accent-orange reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+            <h3>Git &amp; GitHub</h3>
+            <p>Version Control</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-heading reveal">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <a class="timeline-card tilt-card" href="https://www.westminster.ac.uk/" target="_blank" rel="noopener noreferrer">
+              <p class="timeline-title">BEng(Hons) Software Engineering Undergraduate at UOW</p>
             </a>
-          </td>
-          <td></td>
-          <td>
-            <a href="https://www.linkedin.com/in/geesadbandara/">
-              <img src="img/Symbol-LinkedIn.jpg" width="50px" height="50px">
+          </div>
+          <div class="timeline-item reveal">
+            <a class="timeline-card tilt-card" href="https://www.ifs.com/" target="_blank" rel="noopener noreferrer">
+              <p class="timeline-title">Undergraduate Trainee Software Engineer at IFS</p>
             </a>
-          </td>
-        </tr>
-      </table>
-      
-    </div>
-    
+          </div>
+          <div class="timeline-item reveal">
+            <a class="timeline-card tilt-card" href="https://www.postman.com/student-program/student-leader/" target="_blank" rel="noopener noreferrer">
+              <p class="timeline-title">Postman Student Leader of Informatics Institute of Technology</p>
+              <span class="timeline-date">Since 01.01.2024</span>
+            </a>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-card tilt-card">
+              <p class="timeline-title">Chairperson of IEEE CS SBC of IIT</p>
+              <span class="timeline-date">Term 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-heading reveal">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card tilt-card reveal">
+            <span class="project-badge">Coming Soon</span>
+            <h3>Project Title</h3>
+            <p>A short description of this project will go here.</p>
+            <div class="project-tags"><span>Tech</span><span>Tech</span><span>Tech</span></div>
+          </div>
+          <div class="project-card tilt-card reveal">
+            <span class="project-badge">Coming Soon</span>
+            <h3>Project Title</h3>
+            <p>A short description of this project will go here.</p>
+            <div class="project-tags"><span>Tech</span><span>Tech</span><span>Tech</span></div>
+          </div>
+          <div class="project-card tilt-card reveal">
+            <span class="project-badge">Coming Soon</span>
+            <h3>Project Title</h3>
+            <p>A short description of this project will go here.</p>
+            <div class="project-tags"><span>Tech</span><span>Tech</span><span>Tech</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container reveal">
+        <h2 class="section-heading">Get in Touch</h2>
+        <p class="contact-prompt">Feel free to reach out — I'm happy to connect.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:geesadbandara25@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg>
+            Email
+          </a>
+          <a class="contact-link" href="https://github.com/geesadbandara" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.79-.25.79-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.8.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+            GitHub
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/geesadbandara/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p class="footer-text">© 2026 Geesad Bandara</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
