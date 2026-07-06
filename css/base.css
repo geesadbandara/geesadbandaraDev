@@ -593,18 +593,12 @@ section {
 .hero-role {
   font-size: var(--fs-lg);
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-2);
-}
-
-.hero-tagline {
-  font-family: var(--font-mono);
-  font-size: var(--fs-sm);
-  color: var(--color-text-tertiary);
   margin-bottom: var(--space-8);
 }
 
 .hero-ctas {
   display: flex;
+  align-items: center;
   gap: var(--space-4);
   flex-wrap: wrap;
 }
