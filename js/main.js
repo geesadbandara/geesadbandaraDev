@@ -19,17 +19,6 @@
     updateThemeLabel();
   });
 
-  // Cursor-following glass lens on the hero name
-  const heroName = document.getElementById("hero-name");
-
-  if (heroName && !prefersReducedMotion) {
-    heroName.addEventListener("mousemove", (event) => {
-      const rect = heroName.getBoundingClientRect();
-      heroName.style.setProperty("--mx", `${event.clientX - rect.left}px`);
-      heroName.style.setProperty("--my", `${event.clientY - rect.top}px`);
-    });
-  }
-
   // Tilt-on-hover for bento/timeline/project cards and the hero photo
   const tiltCards = document.querySelectorAll(".tilt-card");
 
